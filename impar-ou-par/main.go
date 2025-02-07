@@ -8,6 +8,19 @@ import (
 	"strings"
 )
 
+/*
+	Bugzillas:
+	1. Ao adicionar letras nos números, deve ter tratamento
+	2. Apertar enter sem digitar nada, deve ter tratamento
+	3. Ao digitar "s" ou "n" para continuar, deve ser case insensitive
+
+	Melhorias:
+	1. Adicionar tratamento para números negativos
+	2. Adicionar tratamento para números decimais
+	3. Diminuir a quantidade de if e else. Evitar ao máximo o uso de else
+	4. Fazer a lógica de continuar ou sair totalmente na função continuarOuSair
+*/
+
 func main() {
 
 	var numero int

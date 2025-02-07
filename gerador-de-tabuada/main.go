@@ -8,6 +8,17 @@ import (
 	"strings"
 )
 
+/*
+	Bugs:
+	1. Realizar tratamentos para letras
+	2. Realizar tratamentos para números decimais. Deve aceitar números decimais e inteiros
+
+	Melhorias:
+	1. Fazer todas as operações matemáticas (mais, menos, vezes e dividido)
+
+
+*/
+
 func main() {
 
 	var numero int
