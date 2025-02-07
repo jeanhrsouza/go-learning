@@ -1,2 +1,6 @@
 ## Go Learning
-WIP 🚧👷
+                                WIP 🚧👷
+
+<img src="./assets/imgs/golang.png">
+
+                                WIP 🚧👷
