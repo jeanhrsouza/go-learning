@@ -1,6 +1,6 @@
-package main
+package fundamentos
 
-func main() {
+func Executar() {
 
 	nome := "Cath"
 

@@ -1,4 +1,4 @@
-package main
+package basicao
 
 import (
 	"fmt"
@@ -18,7 +18,7 @@ var (
 	t uint16
 )
 
-func main() {
+func Executar() {
 	// fmt.Scan(&P)
 	P = 1000
 	i = 0.10

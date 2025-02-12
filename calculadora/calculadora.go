@@ -1,4 +1,4 @@
-package main
+package calculadora
 
 import (
 	"fmt"
@@ -16,7 +16,7 @@ import (
 	7 - PLUS - Documentar cada uma das funcionalidades
 */
 
-func main() {
+func Executar() {
 
 	var opcao, i, j int
 

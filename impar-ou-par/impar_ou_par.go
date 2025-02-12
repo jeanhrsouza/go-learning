@@ -1,4 +1,4 @@
-package main
+package imparoupar
 
 import (
 	"fmt"
@@ -21,7 +21,7 @@ import (
 	4. Fazer a lógica de continuar ou sair totalmente na função continuarOuSair
 */
 
-func main() {
+func Executar() {
 
 	var numero int
 

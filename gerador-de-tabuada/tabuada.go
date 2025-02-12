@@ -1,4 +1,4 @@
-package main
+package tabuada
 
 import (
 	"fmt"
@@ -19,7 +19,7 @@ import (
 
 */
 
-func main() {
+func Executar() {
 	for {
 		cabecalho("Gerador de Tabuada")
 
