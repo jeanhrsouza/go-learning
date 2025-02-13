@@ -10,14 +10,6 @@ import (
 	"strings"
 )
 
-// Cabecalho é uma função que imprime um cabeçalho com o título dentro de uma borda
-func Cabecalho(titulo string) {
-	linha := strings.Repeat("-", len(titulo)+6)
-	fmt.Println(linha)
-	fmt.Printf("| %s |\n", titulo)
-	fmt.Println(linha)
-}
-
 func ExecutarComLoop(titulo string, acao func()) {
 	LimparEntrada()
 	for {

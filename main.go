@@ -9,9 +9,13 @@ import (
 	"estudos-brabos/fundamentos"
 	tabuada "estudos-brabos/gerador-de-tabuada"
 	imparoupar "estudos-brabos/impar-ou-par"
+	"estudos-brabos/utils"
 )
 
 func main() {
+
+	utils.CabecalhoASCII("Estudos dos Brabos")
+
 	menu := map[string]func(){
 		"1": basicao.Executar,
 		"2": calculadora.Executar,
