@@ -24,7 +24,7 @@ func main() {
 		"5": imparoupar.Executar,
 	}
 
-	fmt.Println("Escolha um projeto para executar:")
+	fmt.Printf("\nEscolha um projeto para executar:\n")
 	fmt.Println("1 - Básico")
 	fmt.Println("2 - Calculadora")
 	fmt.Println("3 - Fundamentos")
