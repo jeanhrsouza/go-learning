@@ -2,8 +2,6 @@ package tabuada
 
 import (
 	"fmt"
-	"strconv"
-	"strings"
 
 	"estudos-brabos/utils"
 )
@@ -20,37 +18,13 @@ import (
 */
 
 func Executar() {
-	for {
-		utils.Cabecalho("Gerador de Tabuada")
 
-		numero := solicitarNumero()
+	utils.ExecutarComLoop("Gerado de Tabuada", func() {
+		numero := utils.SolicitarNumeroDecimal("Digite um número (inteiro ou decimal): ")
 		operacao := utils.SolicitarOperacao()
 
 		exibirTabuada(numero, operacao)
-
-		if !utils.ContinuarOuSair() {
-			break
-		}
-
-		utils.LimparTerminal()
-	}
-}
-
-func solicitarNumero() float64 {
-	for {
-		fmt.Print("Digite um número (inteiro ou decimal): ")
-		var entrada string
-		fmt.Scanln(&entrada)
-
-		entrada = strings.Replace(entrada, ",", ".", -1)
-
-		numero, err := strconv.ParseFloat(entrada, 64)
-		if err == nil {
-			return numero
-		}
-
-		fmt.Println("Entrada inválida. Digite um número válido (ex: 5 ou 3.14).")
-	}
+	})
 }
 
 func exibirTabuada(numero float64, operacao string) {

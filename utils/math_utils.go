@@ -9,7 +9,6 @@ func SolicitarOperacao() string {
 	operacoesValidas := map[string]bool{"+": true, "-": true, "*": true, "/": true}
 
 	for {
-		LimparEntrada()
 		fmt.Print("Digite a operação (+, -, * ou /): ")
 		var operacao string
 		fmt.Scanln(&operacao)
@@ -20,7 +19,7 @@ func SolicitarOperacao() string {
 			return operacao
 		}
 
-		fmt.Println("Operação inválida. Digite uma operação válida (+, -, * ou /).")
+		fmt.Println("Operação inválida.")
 
 	}
 }

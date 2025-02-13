@@ -19,14 +19,16 @@ import (
 
 func Executar() {
 
-	utils.Cabecalho("Calculadora em GO")
+	utils.ExecutarComLoop("Calculadora em Go", func() {
 
-	operacao := utils.SolicitarOperacao()
+		operacao := utils.SolicitarOperacao()
 
-	primeiroValor := utils.SolicitarNumeroDecimal("Digite o primeiro número: ")
-	segundoValor := utils.SolicitarNumeroDecimal("Digite o segundo número: ")
+		primeiroValor := utils.SolicitarNumeroDecimal("Digite o primeiro número: ")
+		segundoValor := utils.SolicitarNumeroDecimal("Digite o segundo número: ")
 
-	resultadoCalculo := utils.Calcular(primeiroValor, segundoValor, operacao)
+		resultadoCalculo := utils.Calcular(primeiroValor, segundoValor, operacao)
 
-	fmt.Println("Resultado: ", utils.FormatarNumero(resultadoCalculo))
+		fmt.Println("Resultado: ", utils.FormatarNumero(resultadoCalculo))
+
+	})
 }
