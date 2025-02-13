@@ -1,6 +1,7 @@
 package tabuada
 
 import (
+	"estudos-brabos/utils"
 	"testing"
 )
 
@@ -19,7 +20,7 @@ func TestCalcular(t *testing.T) {
 	}
 
 	for _, teste := range testes {
-		resultado := calcular(teste.a, teste.b, teste.operacao)
+		resultado := utils.Calcular(teste.a, teste.b, teste.operacao)
 		if resultado != teste.esperado {
 			t.Errorf("Erro: calcular (%v, %v, %v) retornou %v, esperado %v", teste.a, teste.b, teste.operacao, resultado, teste.esperado)
 		}
